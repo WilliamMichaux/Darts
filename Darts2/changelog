@@ -1,0 +1,52 @@
+CHANGELOG
+---------
+
+[OK]Rajout du mode de jeu "Cricket"
+[OK]Modification fonction affichage pour rajouter le cricket
+[OK]Fix bug d'affichage quand le score est < 10
+
+
+2.2 :
+-----
+
+[OK]Ajout de tous les "classements" dans le cricket
+[OK]Ajout de la fonctionnalité qui fait que si tous les jours ont bloqué un score celui ci devient inutile
+
+2.5:
+----
+
+[A FIXER]Correction après 25 tours, partie fini (on n'affiche pas le bon gagnant mais la partie s'achève.
+[A COMPLETER] /!\/!\/!\Commenter tout le code/!\/!\/!\
+[OK] Corriger les différents bug:
+	-[OK]Quand on fait un score trop élevé dès le début, quand on remet un score, celui-ci compte quand même..
+	-[OK]Quand on affiche "Vous avez fait un score de "...", le score est mauvais.. Bouffon.
+	-[OK]Plante quand on fait un espace derrière le 3e lancé.
+	-[OK]Cricket :: Quand une case est bloquée par un double dès le premier lancé, il faut pas ajouter le score.
+	    Solution : Créer une fonction qui vérifie si la case est bloquée direct ou pas.
+	-[OK]Affichage des chiffres entre 10 et 100 pas total smooth
+	-[OK]Si on fait simplement 'espace' dans les X01 le programme plante.
+	-[OK]Eviter que le programme plante lorsqu'on se trompe en mettant le nombre de joueurs. (Si c'est un string fini)
+
+	#### 06/06/2017 ####
+	Modification class_player pour enlever le décalage qu'il y a avec les scores entre 10 et 100.
+	Modification jeux01 pour fix le bug du premier lancé qui dépasse mais le reste compte quand même
+
+	#### 07/06/2017 ####
+	Modification de get_throw pour fixer le bug de quand il y a un espace en trop ça plante
+	Création de la fonction get_nbr
+	Modification de la fonction main pour être sûr d'avoir un nombre mais bug
+
+	#### 10/06/2017 ####
+	Modification de la fonction get_nbr() en ajoutant un int(var) au return pour fix.
+	Création de la fonction get_type() qui permet de s'assurer qu'en cas d'erreur de l'utilisateur il pourra choisir si c'est éliminatoire ou non.
+	Creation de check_block pour voir si une case est bloquée ou pas
+
+	#### 16/06/2017 ####
+	Fini la fonction check_block et incrustation dans la fonction cricket
+
+
+
+2.6:
+----
+
+-Classement du cricket est inversé
